@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="css/main.css" type="text/css" />
+		<title></title>
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+				list-style: none;
+			}
+
+			body {
+				background-color: #F5F5F5;
+			}
+		</style>
+	</head>
+	<body>
+
+		<div class="nav">
+			<ul>
+				<li><img src="img/logo.png" class="logo" /></li>
+				<li class="active"><a href="index.html">首页</a></li>
+				<li><a href="list.html">文章</a></li>
+				<li><a href="about.html">关于</a></li>
+				<li><a href="contact.html">联系</a></li>
+			</ul>
+		</div>
+		<div class="content3">
+			<div class="details">
+				<p class="de-t">2021年12月12日 / 11 阅读 / 0 评论 / 0 点赞</p>
+				<h2>这是一个测试文章</h2>
+				<div class="details-cnotent">
+					<p>
+						每个人心里，都住着这么一个人，遥远的爱着。这辈子也许都无法在一起，也许都没有说过几句话，也没有一起吃饭看电影，可是就是这个遥远的人支撑了青春里最重要，最灿烂的那些日子。
+					</p>
+					<img src="img/b1.jpg" onclick="showImage(1)" />
+					<p>
+						每个人心里，都住着这么一个人，遥远的爱着。这辈子也许都无法在一起，也许都没有说过几句话，也没有一起吃饭看电影，可是就是这个遥远的人支撑了青春里最重要，最灿烂的那些日子。
+					</p>
+				</div>
+			</div>	
+		</div>
+		<div class="show-img">
+			<span class="colse-img" onclick="closeImage()">x</span>
+			<img class="sh-img" src="图片暂无" />
+		</div>
+		<div class="footer">
+			<p> 2021 - 2021 © Reach - Make By HaiZheng</p>
+		</div>
+		<script src="js/jquery-3.5.1.min.js"></script>
+		<script>
+		//产品大图展示
+		function showImage(num) {
+		    //产品放大区域淡入
+		    $(".show-img").fadeIn(500);
+		    //指定查看的图片路径
+		    $(".sh-img").attr("src", "img/b" + num + ".jpg");
+		}
+		
+		//关闭产品大图
+		function closeImage() {
+		    //产品放大区域淡出
+		    $(".show-img").fadeOut(500);
+		}
+		</script>
+	</body>
+</html>

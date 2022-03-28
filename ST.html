@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/main.css" type="text/css" />
+    <title>汕头</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        body {
+            background-color: #F5F5F5;
+        }
+    </style>
+</head>
+<body>
+
+<div class="nav">
+    <ul>
+        <li><img src="img/logo.png" class="logo" /></li>
+        <li class="active"><a href="index.html">首页</a></li>
+        <li><a href="list.html">文章</a></li>
+        <li><a href="about.html">关于</a></li>
+        <li><a href="contact.html">联系</a></li>
+    </ul>
+</div>
+<div class="content3">
+    <div class="details">
+        <p class="de-t">2021年8月8日 / 11 阅读 / 0 评论 / 6 点赞</p>
+        <h2>汕头</h2>
+        <div class="details-cnotent">
+            <pre style="font-size: 20px">
+                                汕头，简称“汕”，广东省辖地级市，潮汕四市之一 [1-5]  ，汕潮揭都市圈城市，
+                            经济特区，[6]  位于韩江三角洲南端，北接潮州，西邻揭阳，南濒南海，与台湾隔海相望，
+                            境内韩江、榕江、练江三江入海，是中国大陆唯一拥有内海湾的城市。 [7-8]  全市下辖
+                            6个区、1个县，总面积2199平方千米，根据第七次人口普查数据，截至2020年11月1日零时，
+                            汕头常住人口为550.2031万人。
+
+
+
+
+
+
+
+
+
+
+                         我们这次旅行的目的地是南澳岛，本来我们出发的时候还是好天气，可是天公不作美，
+                       在我们到达南澳岛后就下起了大雨，原本以为我们的旅行只能以遗憾告别汕头，但是在我们
+                         的等待下还是等来了汕头之行里最美的照片，我也感叹南澳岛上的风力发电资源如此丰富，
+                            那一台台风力发电机走进看时我们是有多么的渺小。
+
+            <img style="position: absolute;top: 170px;left: 300px;width: 200px;height: 200px;" src="img/ST/4.jpg" onclick="showImage(4)" />
+            <img style="position: absolute;top: 320px;left: 640px;width: 200px;height: 200px;" src="img/ST/1.jpg" onclick="showImage(1)" />
+            <img style="position: absolute;top: 570px;left: 280px;width: 200px;height: 200px;-webkit-transform:rotate(-15deg);" src="img/ST/2.jpg" onclick="showImage(2)" />
+            <img style="position: absolute;top: 600px;left: 1050px;width: 200px;height: 200px;" src="img/ST/3.jpg" onclick="showImage(3)" />
+
+            </pre>
+        </div>
+    </div>
+</div>
+<div class="show-img">
+    <span class="colse-img" onclick="closeImage()">x</span>
+    <img class="sh-img" src="图片暂无" />
+</div>
+<div class="footer">
+    <p> 2021 - 2021 © Reach - Make By HaiZheng</p>
+</div>
+<script src="js/jquery-3.5.1.min.js"></script>
+<script>
+    //产品大图展示
+    function showImage(num) {
+        //产品放大区域淡入
+        $(".show-img").fadeIn(500);
+        //指定查看的图片路径
+        $(".sh-img").attr("src", "img/ST/" + num + ".jpg");
+    }
+
+    //关闭产品大图
+    function closeImage() {
+        //产品放大区域淡出
+        $(".show-img").fadeOut(500);
+    }
+</script>
+</body>
+</html>

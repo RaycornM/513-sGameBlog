@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/main.css" type="text/css" />
+    <title>广州</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        body {
+            background-color: #F5F5F5;
+        }
+    </style>
+</head>
+<body>
+
+<div class="nav">
+    <ul>
+        <li><img src="img/logo.png" class="logo" /></li>
+        <li class="active"><a href="index.html">首页</a></li>
+        <li><a href="list.html">文章</a></li>
+        <li><a href="about.html">关于</a></li>
+        <li><a href="contact.html">联系</a></li>
+    </ul>
+</div>
+<div class="content3">
+    <div class="details">
+        <p class="de-t">2021年1月16日 / 11 阅读 / 0 评论 / 5 点赞</p>
+        <h2>广州</h2>
+        <div class="details-cnotent">
+            <pre style="font-size: 20px">
+
+                                广州塔（英语：Canton Tower）又称广州新电视塔，
+                            昵称小蛮腰，其位于中国广东省广州市海珠区（艺洲岛）
+                            赤岗塔附近，距离珠江南岸125米，与珠江新城、花城广场、
+                            海心沙岛隔江相望。广州塔塔身主体高454米，天线桅杆高
+                            146米，总高度600米 [31-32]  。是中国第一高塔，
+                            是国家AAAA级旅游景区。
+
+
+
+
+
+
+                                二沙岛又称二沙头、二沙头岛，位于广州市中心珠江河段上
+                            ，岛四周江水环抱，南临珠江主航道，北靠珠江次航道，西北角面
+                            对东山湖公园，北面与珠岛宾馆和五羊新城隔江相望，西靠大沙头
+                            码头。
+                                我们这次去了二沙岛一个新开的商城，里面的设计元素让我们
+                            沉浸其中，给二沙岛带来了不一样的新生活力。
+
+            <img  class="tGZ" style="position: absolute;top: 170px;left: 300px;width: 200px;height: 200px;" src="img/GZ/5.jpg" onclick="showImage(5)" />
+            <img  class="tGZ" style="position: absolute;top: 250px;left: 1050px;width: 200px;height: 200px;" src="img/GZ/3.jpg" onclick="showImage(3)" />
+            <img  class="tGZ" style="position: absolute;top: 470px;left: 270px;width: 200px;height: 200px;-webkit-transform:rotate(15deg);" src="img/GZ/1.jpg" onclick="showImage(1)" />
+            <img  class="tGZ" style="position: absolute;top: 630px;left: 620px;width: 200px;height: 150px;" src="img/GZ/4.jpg" onclick="showImage(4)" />
+            <img  class="tGZ" style="position: absolute;top: 590px;left: 1050px;width: 200px;height: 200px;-webkit-transform:rotate(-15deg);" src="img/GZ/2.jpg" onclick="showImage(2)" />
+            </pre>
+        </div>
+    </div>
+</div>
+<div class="show-img">
+    <span class="colse-img" onclick="closeImage()">x</span>
+    <img class="sh-img" src="图片暂无" />
+</div>
+<div class="footer">
+    <p> 2021 - 2021 © Reach - Make By HaiZheng</p>
+</div>
+<script src="js/jquery-3.5.1.min.js"></script>
+<script>
+    //图片大图展示
+    function showImage(num) {
+        //产品放大区域淡入
+        $(".show-img").fadeIn(500);
+        //指定查看的图片路径
+        $(".sh-img").attr("src", "img/GZ/" + num + ".jpg");
+    }
+
+    //关闭图片大图
+    function closeImage() {
+        //产品放大区域淡出
+        $(".show-img").fadeOut(500);
+    }
+</script>
+</body>
+</html>

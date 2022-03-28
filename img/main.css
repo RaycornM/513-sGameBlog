@@ -1,0 +1,30 @@
+
+.banner{
+	width: 80%;
+	margin: 20px auto;
+	height: 500px;
+	position: relative;
+}
+.banner .bg{
+	width: 100%;
+	height: 500px;
+	border-radius: 10px;
+}
+.z{
+	position: absolute;
+	top: 39%;
+	left: 0px;
+	cursor: pointer;
+	display: none;
+}
+.r{
+	position: absolute;
+	top: 39%;
+	right: 0px;
+	cursor: pointer;
+	display: none;
+}
+.content{
+	width: 80%;
+	margin: 50px auto;
+}
